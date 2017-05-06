@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<!-- Bootstrap CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>LETS TAKE THE SURVEY AND FIND A FRIEND</h1>
+        <hr>
+        <h3>About You</h3>
+        <h4>Name (Required):</h4>
+        <input type="text" class="form-control" id="name" placeholder="Text input">
+        <h4>URL to Photo Image (Required):</h4>
+        <input type="text" class="form-control" id="photo" placeholder="Text input">
+        <hr>
+        <!--  Questions -->
+        <h3>
+                <strong>Question 1</strong>
+            </h3>
+        <h4>You like to go out late</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+                <strong>Question 2</strong>
+            </h3>
+        <h4>you like basketball</h4>
+        <select data-placeholder="" class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+                <strong>Question 3</strong>
+            </h3>
+        <h4>Do you like the current president of the US</h4>
+        <select data-placeholder="" class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+                <strong>Question 4</strong>
+            </h3>
+        <h4>do you like dogs</h4>
+        <select data-placeholder="" class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+                <strong>Question 5</strong>
+            </h3>
+        <h4>do you like rap music</h4>
+        <select data-placeholder="" class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+                <strong>Question 6</strong>
+            </h3>
+        <h4>can you slam dunk boom shakalaka!?</h4>
+        <select data-placeholder="" class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+                <strong>Question 7</strong>
+            </h3>
+        <h4>are you the life of the party?</h4>
+        <select data-placeholder="" class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <!-- Questions (cont.) -->
+        <h3>
+                <strong>Question 8</strong>
+            </h3>
+        <h4>did you know what happened last summer</h4>
+        <select data-placeholder="" class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+                <strong>Question 9</strong>
+            </h3>
+        <h4>in the case of an emergency landing, do you know the protocall?</h4>
+        <select data-placeholder="" class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+                <strong>Question 10</strong>
+            </h3>
+        <h4>do you like food?</h4>
+        <select data-placeholder="" class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <p>
+            <a class="btn btn-success btn-lg" id="submit" href="#" role="button"> Submit</a>
+        </p>
+        <hr>
+        <!-- Modal -->
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"></h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer class="footer">
+        <p><a href="/api/friends">API Friends List</a> | <a target="_blank" href="https://github.com/AndreasPapaz/FriendFinder">GitHub Repo</a></p>
+    </footer>
+    </div>
+    <script src="../server.js"></script>
+    <script>
+    // $('#modal').on('shown.bs.modal', function() { // $('#modal').focus(); // });
+    $('#submit').on('click', function() {
+        // store name and photo link as variables
+        var name = $('#name').val().trim();
+        var photoLink = $('#photo').val().trim();
+        var ansLength = $('#q1').val().length + $('#q2').val().length + $('#q3').val().length + $('#q4').val().length + $('#q5').val().length + $('#q6').val().length + $('#q7').val().length + $('#q8').val().length + $('#q9').val().length + $('#q10').val().length;
+        // if name and photo link aren't blank:
+        if (name.length > 0 && photoLink.length > 0 && ansLength === 10) {
+            // create new friend object
+            var newFriend = {
+                name: name,
+                photo: photoLink,
+                scores: [$('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(), $('#q6').val(), $('#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val()]
+            };
+            // empty fields
+            $('#name').val('');
+            $('#photo').val('');
+            $('#q1').val('');
+            $('#q2').val('');
+            $('#q3').val('');
+            $('#q4').val('');
+            $('#q5').val('');
+            $('#q6').val('');
+            $('#q7').val('');
+            $('#q8').val('');
+            $('#q9').val('');
+            $('#q10').val('');
+            // post data to friends API
+            $.post('/api/friends', newFriend, function(data) {
+                $('.modal-title').html('Your Friend Match');
+                $('.modal-body').html('<h4>' + data.name + '</h4><img src="' + data.photo + '" alt="Friend Photo" height=300><p>');
+                $('.modal').modal('show');
+            });
+            // don't refresh
+            return false;
+            // if name and photo link are blank:
+        } else {
+            $('.modal-title').html('Oops!');
+            $('.modal-body').html('All fields are required.');
+            $('.modal').modal('show');
+        }
+    });
+    </script>
+</body>
+
+</html>
